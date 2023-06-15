@@ -2,7 +2,7 @@ import { createContext, useState, useEffect } from "react";
 
 const NavigationContext = createContext();
 
-function NavigationProvider ({Children}) {
+function NavigationProvider ({children}) {
     const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
     useEffect(() => {
@@ -23,7 +23,7 @@ function NavigationProvider ({Children}) {
 
     return (
      <NavigationContext.Provider value={{ currentPath, navigate }}>
-        {Children}
+        {children}
      </NavigationContext.Provider>
     );
 }

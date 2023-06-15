@@ -28,7 +28,7 @@ function Table({ data, config, keyFn }) {
         return (
           <table className="table-auto border-spacing-2">
             <thead>
-                <tr className="border-b-2"> {renderedHeaders} </tr>
+                <tr className="border-b-2">{renderedHeaders}</tr>
             </thead>
             <tbody>{renderedRows}</tbody>
           </table>

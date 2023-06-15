@@ -3,7 +3,7 @@ import SortableTable from "../components/SortableTable";
 
 function TablePage() {
     const data = [
-        {name: 'Orange', color:'bg-orange-500', score:5 },        {name: 'Orange', color:'bg-orange-500', score:5 },
+        {name: 'Orange', color:'bg-orange-500', score:5 },
         {name: 'Apple', color:'bg-red-500', score:5 },
         {name: 'Banana', color:'bg-yellow-500', score:5 },
         {name: 'Lime', color:'bg-green-500', score:5 },
@@ -26,7 +26,8 @@ function TablePage() {
         },
       //  {
       //      label: 'Score Squared',
-      //      render: (fruit) => fruit.score **2,
+      //      render: (fruit) => fruit.score ** 2,
+      //      sortValue: (fruit) => fruit.score ** 2,
       //  },
     ];
 
